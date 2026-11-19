@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "20261119T202236Z--upstream58-batch5-camel-rerun",
+  "recorded_at": "2026-11-19T20:22:36Z",
+  "actor": "OpenSiro AI assistant (user-requested Upstream #58 five-case rerun)",
+  "kind": "RESEARCH",
+  "decision": "GO",
+  "evidence_urls": [
+    "https://github.com/opensiro-contributions/camel/commit/e4c78300c6cf44ad1044c7ef35b683d217be42c9",
+    "https://github.com/opensiro-contributions/camel/blob/e4c78300c6cf44ad1044c7ef35b683d217be42c9/.opensiro/issues/camel-workforce-validation-roadmap-20261119/roadmap.md",
+    "https://github.com/opensiro/upstream/issues/58"
+  ],
+  "note": "Proposal-gate source-first rerun recorded in canonical Human/AI/Receipt. Separate protected independent external-citation evidence review before Workforce terminal acceptance, distinct from native TaskAgent quality/dedup (open PR #3395). Original earlier case NO_GO on ordinary deduplication, not reversed. Research NEEDS_EVIDENCE; native tests NOT_RUN, external publication not authorized.",
+  "next_action": "Check pre-terminal source-native reviewer gateway, parent rights and independent evidence, compare TaskAgent and PR #3395; tests NOT_RUN."
+}
