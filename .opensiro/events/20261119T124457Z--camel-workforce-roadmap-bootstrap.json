@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "20261119T124457Z--camel-workforce-roadmap-bootstrap",
+  "recorded_at": "2026-11-19T12:44:57.690Z",
+  "actor": "OpenSiro AI assistant (user-requested upstream roadmap)",
+  "kind": "RESEARCH",
+  "decision": "NO_GO",
+  "evidence_urls": [
+    "https://github.com/opensiro/vsm-harness-index/blob/34e11ec4dd52e1ba3ee0111d8bca73f13918f54f/assessments/ca/camel-workforce.md",
+    "https://github.com/camel-ai/camel/issues/3332",
+    "https://github.com/camel-ai/camel/pull/3395"
+  ],
+  "next_action": "No speculative S3* constructor. Keep fork PAUSE/DORMANT; exact owner approval required for public Issue and any later work."
+}
