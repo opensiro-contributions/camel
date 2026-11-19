@@ -1,62 +1,93 @@
-# CAMEL Workforce — Capability Roadmap Receipt
+# camel-ai/camel — Upstream #58 independent v0.18 receipt
 
+- Receipt contract: proposal-gate
 - Original repository: camel-ai/camel
 - Original HEAD: c619d1fe5aa2182395d02aadddc71b818c1b6c9f
 - Observed at: 2026-11-19
-- Accepted Index assessment: https://github.com/opensiro/vsm-harness-index/blob/34e11ec4dd52e1ba3ee0111d8bca73f13918f54f/assessments/ca/camel-workforce.md
+- Accepted Index assessment: https://github.com/opensiro/vsm-harness-index/blob/c2e43bf4750841277b3e58d8ba80314121734764/assessments/ca/camel-workforce.md
 - Accepted assessment blob SHA: 1d8e2198e02ddceb978d9bb3a5094bc7a40d0d16
 - Accepted review ref: 8c791b7b9cf7deab56cb5a92818c34499af9097f
 - Accepted reviewed at: 2026-09-17
-- Accepted Index commit: 34e11ec4dd52e1ba3ee0111d8bca73f13918f54f
-- Accepted vector: S1=A · S2=C · S3=A · S3*=— · S4=— · S5=—
-- Profile version at accepted review: 0.2.1
-- Skills procedure at accepted review: 0.3.1
-- Latest canonical successful semantic review: 2026-09-17 (63 calendar days before this receipt)
-- System in focus: First-party CAMEL Workforce supported AUTO_DECOMPOSE/PIPELINE tasks, coordinator, workers, task agent and built-in callbacks/recovery; exclude original maintainer governance and external plugins
-- Result: NO_USEFUL_CHANGE
-- Final operator decision: NO_GO
+- Accepted Index commit: c2e43bf4750841277b3e58d8ba80314121734764
+- Accepted Profile version: 0.2.1
+- Accepted Skills methodology version: 0.3.1
+- Accepted VSM vector: S1=A · S2=C · S3=A · S3*=— · S4=— · S5=—
+- System in focus: Supported first-party CAMEL Workforce AUTO_DECOMPOSE and PIPELINE worker/coordinator task execution, result aggregation, quality and callback surfaces; excludes host governance and third-party deployments
+- Matching working fork: opensiro-contributions/camel
+- Fork owner control: ACTIVE/ALLOW per .opensiro/state.json
+- Repository-wide source map: camel/societies/workforce/workforce.py; camel/societies/workforce/workforce_callback.py; docs/key_modules/workforce.md; original README, docs, tests, license, contributing, original Issues/PRs
+- Evaluation object: Hypothetical external-source citation integrity review requiring audit separate from ordinary TaskAgent validation; no observed maintainer demand or measured benefit
+- Existing-work overlap: TaskAgent aggregation/quality and failure recovery are in the coordinator control path; callbacks observe lifecycle but do not veto acceptance; open PR #3395 adds duplicate/refinement checks and is NOT shipped
+- Our on-top contribution: Opt-in independent evaluator_agent injected at the Workforce boundary, reading stable citations/worker evidence rather than a mutable coordinator summary, able to accept/hold/request bounded rework before accepted completion, with a durable disposition and parent-checked authority
+- Incremental benefit: hypothetical independent auditable correctness decision unavailable from same-owner quality checks; not measured
+- Decision scope: one source-pinned proposed C capability, not whole-project or Index regrade
+- Priority rationale: S3* has defensible distinct external-evidence actor, opt-in port and feedback; other functions have owner or no qualified scenario
+- Target transition: S3*=— -> S3*=C
+- P1 dependencies: Verify existence of an authorized pre-terminal interception; contrast TaskAgent/#3395 and separate evidence access; confirm that proposed reviewer returns a later-work correction
+- P2 optional: NONE
+- Proposed C construction: Opt-in independent evaluator_agent injected at the Workforce boundary, reading stable citations/worker evidence rather than a mutable coordinator summary, able to accept/hold/request bounded rework before accepted completion, with a durable disposition and parent-checked authority
+- C sufficiency falsifier: If TaskAgent/PR #3395 or a user supplied callback already provides independently sourced pre-finalization veto and corrective feedback with the same parent rights, or lawful terminal interception is unavailable, the proposed new C is unnecessary
+- Scenario basis: HYPOTHETICAL
+- Proposal-stage decision: GO
+- Research disposition: NEEDS_EVIDENCE
+- Proposed validation: Same two Workforce research tasks with supported and fabricated cited outputs; compare TaskAgent baseline, independent accept/hold/rework, missing reviewer, stale review, parent pause and retry exhaustion; NOT_RUN
+- Validation state: NOT_RUN
+- Proposal falsifier: If TaskAgent/PR #3395 or a user supplied callback already provides independently sourced pre-finalization veto and corrective feedback with the same parent rights, or lawful terminal interception is unavailable, the proposed new C is unnecessary
+- Result: NEEDS_EVIDENCE
 - External issue: DRAFT — NOT PUBLISHED
-- Fork GitHub Issue: READY_FOR_FORK_ISSUE_APPROVAL — NOT PUBLISHED
+- Public fork Issue: DRAFT — NOT PUBLISHED
 - Cost status: NOT_MEASURED
-- Research artifacts: [Human issue](https://github.com/opensiro-contributions/camel/blob/opensiro/meta/.opensiro/issues/camel-workforce-validation-roadmap-20261119/issue.md) · [AI contract](https://github.com/opensiro-contributions/camel/blob/opensiro/meta/.opensiro/issues/camel-workforce-validation-roadmap-20261119/constructor-sufficiency.md)
-- Working fork: https://github.com/opensiro-contributions/camel
-- Fork product branch base: 0366b64bf3609c76f50e396715aab73ba58a930c
-- Fork metadata control: PAUSE/DORMANT after initial authorized bootstrap; no owner ALLOW inferred
+- S1 disposition: first-party autonomous operational tasks under native tool feedback
+- S2 disposition: dependency scheduling prevents premature concurrent tasks
+- S3 disposition: Coordinator chooses worker assignment and current-task recovery
+- S3* disposition: quality evaluator is within current control; callbacks are observer-only, proposed separate evidence audit is unshipped
+- S4 disposition: current failure replanning is not independent prospective external intelligence
+- S5 disposition: operator, deployment and user retain ultimate constraints
 
 ## Identity and pins
 
-Original [HEAD](https://github.com/camel-ai/camel/commit/c619d1fe5aa2182395d02aadddc71b818c1b6c9f) was separately observed from accepted [review source](https://github.com/camel-ai/camel/commit/8c791b7b9cf7deab56cb5a92818c34499af9097f); accepted Index is pinned at [34e11ec4dd52e1ba3ee0111d8bca73f13918f54f](https://github.com/opensiro/vsm-harness-index/commit/34e11ec4dd52e1ba3ee0111d8bca73f13918f54f) and its assessment blob is `1d8e2198e02ddceb978d9bb3a5094bc7a40d0d16` (historical review 2026-09-17). Historical vector `A C A — — —` is not a present-day regrade. The most recent supported semantic review is 63 days old; recommend a distinct Index-owned source-pinned reassessment if a confident updated vector is needed. No actual pending reassessment is asserted.
+Pinned [Index assessment](https://github.com/opensiro/vsm-harness-index/blob/c2e43bf4750841277b3e58d8ba80314121734764/assessments/ca/camel-workforce.md), review [8c791b7b9cf7deab56cb5a92818c34499af9097f](https://github.com/camel-ai/camel/commit/8c791b7b9cf7deab56cb5a92818c34499af9097f), indexed 2026-09-17, blob 1d8e2198e02ddceb978d9bb3a5094bc7a40d0d16, Profile 0.2.1, Skills 0.3.1. Original [current HEAD](https://github.com/camel-ai/camel/commit/c619d1fe5aa2182395d02aadddc71b818c1b6c9f) is distinct; no new Index grades. Source-first research preceded old case comparison.
 
 ## Rights and authority
 
-Verified original license: [Apache-2.0](https://github.com/camel-ai/camel/blob/c619d1fe5aa2182395d02aadddc71b818c1b6c9f/LICENSE); [CONTRIBUTING](https://github.com/camel-ai/camel/blob/c619d1fe5aa2182395d02aadddc71b818c1b6c9f/CONTRIBUTING.md) requires prior accepted discussion for PRs, human-vetted AI drafts and testing. Additional CLA/DCO evidence for future third-party submission: UNVERIFIED. Matching fork `opensiro-contributions/camel` verified `fork=true`, parent `camel-ai/camel`, writable by connected owner; dedicated `opensiro/meta` only. Initial state is `PAUSE/DORMANT`, not an ALLOW or permission for follow-on publication. This plan records no code improvement or contribution ID.
+Matching writable fork parent checked and owner-controlled `opensiro/meta` state ACTIVE/ALLOW read back. License/contributing assessed; CAMEL AI policy demands accepted discussion, human review and tests; Cline needs approved feature issue first. No public fork Issue, original Issue/comment/PR or product code authorized. Parent policy remains authoritative.
 
 ## Existing work / overlap
 
-Current [`process_task_async`](https://github.com/camel-ai/camel/blob/c619d1fe5aa2182395d02aadddc71b818c1b6c9f/camel/societies/workforce/workforce.py#L2669-L2707) joins subtask results; ordinary [`_analyze_task`](https://github.com/camel-ai/camel/blob/c619d1fe5aa2182395d02aadddc71b818c1b6c9f/camel/societies/workforce/workforce.py#L1645-L1726) performs quality/failure analysis in existing control path. [Original #3332](https://github.com/camel-ai/camel/issues/3332) asks for dedup of parallel results and targeted retries; [PR #3395](https://github.com/camel-ai/camel/pull/3395) OPEN/unmerged supplies proposed validation/refinement, tests and example. [#3980](https://github.com/camel-ai/camel/issues/3980)/[PR #3979](https://github.com/camel-ai/camel/pull/3979) OPEN/unmerged proposes plan/edit/run API and better events. [#3379](https://github.com/camel-ai/camel/issues/3379)/[PR #3403](https://github.com/camel-ai/camel/pull/3403) and [#3352](https://github.com/camel-ai/camel/issues/3352)/[PR #3363](https://github.com/camel-ai/camel/pull/3363) address callback surfaces; these do not prove an independent reviewer. No PR is treated as shipped.
+Source [camel/societies/workforce/workforce.py](https://github.com/camel-ai/camel/blob/c619d1fe5aa2182395d02aadddc71b818c1b6c9f/camel/societies/workforce/workforce.py); [camel/societies/workforce/workforce_callback.py](https://github.com/camel-ai/camel/blob/c619d1fe5aa2182395d02aadddc71b818c1b6c9f/camel/societies/workforce/workforce_callback.py); [docs/key_modules/workforce.md](https://github.com/camel-ai/camel/blob/c619d1fe5aa2182395d02aadddc71b818c1b6c9f/docs/key_modules/workforce.md). Native work [issues / 3332](https://github.com/camel-ai/camel/issues/3332); [pull / 3395](https://github.com/camel-ai/camel/pull/3395); [pull / 3979](https://github.com/camel-ai/camel/pull/3979). TaskAgent aggregation/quality and failure recovery are in the coordinator control path; callbacks observe lifecycle but do not veto acceptance; open PR #3395 adds duplicate/refinement checks and is NOT shipped. A new agent name alone is neither a source-grounded C nor permission for a product change.
 
 ## Function ownership
 
-Accepted historical S1=A (workers), S2=C (dependency gates), S3=A (coordinator), S3*=— (quality eval not independent audit), S4=— (no demonstrated future/external adaptation), S5=— (operator stop/pause not ultimate policy closure). At current inspected HEAD, operational native quality checks remain in existing Workforce control, while relevant separate validation/streaming proposals are open. No independent first-party S3* decision/feedback right was established by this research; no regrade is made.
+- **S1** historical **A**: first-party autonomous operational tasks under native tool feedback. NO_TARGET or DEFER.
+- **S2** historical **C**: dependency scheduling prevents premature concurrent tasks. NO_TARGET or DEFER.
+- **S3** historical **A**: Coordinator chooses worker assignment and current-task recovery. NO_TARGET or DEFER.
+- **S3*** historical **—**: quality evaluator is within current control; callbacks are observer-only, proposed separate evidence audit is unshipped. P0 candidate.
+- **S4** historical **—**: current failure replanning is not independent prospective external intelligence. NO_TARGET or DEFER.
+- **S5** historical **—**: operator, deployment and user retain ultimate constraints. NO_TARGET or DEFER.
+
+## Parallel contribution-on-top review
+
+| Necessary function-specific outcome | Track A: shipped/Issue/PR | Track B: independent minimum addition or NONE | Falsifier |
+| --- | --- | --- | --- |
+| Hypothetical external-source citation integrity review requiring audit separate from ordinary TaskAgent validation; no observed maintainer demand or measured benefit | TaskAgent aggregation/quality and failure recovery are in the coordinator control path; callbacks observe lifecycle but do not veto acceptance; open PR #3395 adds duplicate/refinement checks and is NOT shipped | Opt-in independent evaluator_agent injected at the Workforce boundary, reading stable citations/worker evidence rather than a mutable coordinator summary, able to accept/hold/request bounded rework before accepted completion, with a durable disposition and parent-checked authority | If TaskAgent/PR #3395 or a user supplied callback already provides independently sourced pre-finalization veto and corrective feedback with the same parent rights, or lawful terminal interception is unavailable, the proposed new C is unnecessary |
+| Later operational closure and parent rights | Real native task/host feedback, license and parent authority | Before-terminal receipt must authorize accept/hold/correct and feed a later Workforce retry | Same result without distinct owner or without lawful enforcement |
 
 ## Capability priority
 
-**P0: REJECTED new S3*=C constructor.** Evidenced operator need is five *unique* papers from parallel subtask results, not a protected independent audit owner. Current shipped concat may duplicate; native #3332 / open #3395 is narrower and directly aligned. **P1:** reuse original-native validation/refinement path and review its own tests, no independent OpenSiro PR. **P2:** NONE. Already-A S3 and already-C S2 need no mandatory C engineering; S4/S5 are not justified solely by missing historical states. Proposed protected reviewer ports and positive/negative conditional acceptance are detailed in the linked AI contract, **not qualified to implement**. C sufficiency: NOT ESTABLISHED.
+P0: S3*=— -> S3*=C. P1: Verify existence of an authorized pre-terminal interception; contrast TaskAgent/#3395 and separate evidence access; confirm that proposed reviewer returns a later-work correction. P2: NONE. Research **GO/NEEDS_EVIDENCE**. The historical states are not a defect checklist.
 
 ## Implementation options
 
-**Decision now: NO_GO** for a separate S3* constructor. Do not code, duplicate #3395, publish issue/PR, promote grades, or claim the need has already been solved. CAMEL may independently review #3395 and its native tests; if a future user proves an additional independent audit benefit, start a new source-pinned hypothesis and separate Upgrade permission. No native tests executed in this research-only pass.
+Opt-in independent evaluator_agent injected at the Workforce boundary, reading stable citations/worker evidence rather than a mutable coordinator summary, able to accept/hold/request bounded rework before accepted completion, with a durable disposition and parent-checked authority. Compare simpler alternative TaskAgent aggregation/quality and failure recovery are in the coordinator control path; callbacks observe lifecycle but do not veto acceptance; open PR #3395 adds duplicate/refinement checks and is NOT shipped. Proposed C requires eligible inputs, decisive actor, lawful enforcement, actual later operation and returned feedback; these are a source-mapped design, not a shipped or tested constructor. Falsifier: If TaskAgent/PR #3395 or a user supplied callback already provides independently sourced pre-finalization veto and corrective feedback with the same parent rights, or lawful terminal interception is unavailable, the proposed new C is unnecessary.
 
 ## Specification and domain alternatives
 
-No demonstrated Profile semantic bug or Skills method defect; retain their independent authority. A domain-specific fork experiment is optional only after distinct user need, lawful rights and a measurable comparison; it is not automatic follow-on work. An original maintainer issue would duplicate #3332, so no new original issue is proposed.
+Previous same-HEAD NO_GO case concerns five-paper deduplication. This GO does not overturn that finding: it addresses distinct independent external-evidence audit ownership.. Original authors own implementation; historical different case did not determine this first-pass outcome. Missing S4/S5 code does not imply a deliberate omission; intention UNVERIFIED. No Profile/Skills changes implied.
 
 ## Cost experiment
 
-Predeclare the same five-unique-paper task under (A) minimal native validation/refinement and (B) an independent VSM-inspired auditor: compare correctness, exact distinct IDs, retries, review effort, implementation, integration, test, model cost and subsequent maintenance/regressions. **Cost status: NOT_MEASURED.** No claims of savings, adoption or independent native test execution.
+Matched native comparator: Same two Workforce research tasks with supported and fabricated cited outputs; compare TaskAgent baseline, independent accept/hold/rework, missing reviewer, stale review, parent pause and retry exhaustion; NOT_RUN. Measure correct decisions, reviewer/regression effort, latency, tokens, human approval and maintenance cost. NOT_RUN; NOT_MEASURED.
 
 ## Delivery and publication
 
-Human-first [issue.md](https://github.com/opensiro-contributions/camel/blob/opensiro/meta/.opensiro/issues/camel-workforce-validation-roadmap-20261119/issue.md) and separate cross-linked [constructor-sufficiency.md](https://github.com/opensiro-contributions/camel/blob/opensiro/meta/.opensiro/issues/camel-workforce-validation-roadmap-20261119/constructor-sufficiency.md) both state **NO_GO** and the same accepted vector/P0/P1/P2. Full fork-publication proposed title: `CAMEL Workforce — native result validation vs an independent S3* constructor (OpenSiro plan-only)`; full proposed body is `issue.md`. **Fork Issue: READY_FOR_FORK_ISSUE_APPROVAL — NOT PUBLISHED**, requiring separate exact current-conversation owner consent. **External issue: DRAFT — NOT PUBLISHED** (not needed because #3332 already covers native operator task). No native implementation, fork PR, external original post, Index re-assessment, mandate or outcome KPI.
-
-**Final decision: NO_GO; research closed for now.** The fork-local case preserves the source-backed negative decision but does not establish new S3* capability. Fork attention PAUSE/DORMANT; new effects need an attributable owner change and any separate exact publication approvals.
+[Human](issue.md) and [AI](constructor-sufficiency.md) derive this **GO/NEEDS_EVIDENCE**. Internal OpenSiro fork metadata only; external issue DRAFT — NOT PUBLISHED. Current Index and original product untouched. No native tests, CI or cost measurements asserted.
