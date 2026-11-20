@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "20261120T170455Z--camel-v0181-native-followup",
+  "recorded_at": "2026-11-20T17:04:55Z",
+  "actor": "OpenSiro AI assistant (user-requested Upstream #58 one-harness v0.18.1 follow-up)",
+  "kind": "RESEARCH",
+  "decision": "GO",
+  "evidence_urls": [
+    "https://github.com/opensiro/upstream/issues/58#issuecomment-7045427842",
+    "https://github.com/opensiro/upstream/issues/58#issuecomment-7045477719",
+    "https://github.com/camel-ai/camel/commit/c619d1fe5aa2182395d02aadddc71b818c1b6c9f",
+    "https://github.com/opensiro/vsm-harness-index/blob/c2e43bf4750841277b3e58d8ba80314121734764/assessments/ca/camel-workforce.md"
+  ],
+  "note": "Same-case v0.18.1 native-specific refinement of the historical v0.18 GO/NEEDS_EVIDENCE S3* case, not a new Wave 4 NO_GO re-run. Source-first checkpoint sealed before reading previous case. P0 optional independent raw-artifact reviewer before _handle_completed_task and dependent task _post_ready_tasks; lawful hold/rework/re-audit with original native semantics. Canonical case Human/AI/receipt and README updated; structural validator PASS in staging, native tests NOT_RUN, no original/public fork publication or product implementation.",
+  "next_action": "Confirm lawful reviewer rights and native pre-completion/dependency interlock via targeted tests before any upgrade; publication only after exact prior approval."
+}
